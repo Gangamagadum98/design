@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Atria Power</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- css files -->
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+</head>
+
+<body>
+
+    <!-- Header section start -->
+    <header>
+
+        <div class="row align-items-center no-gutters">
+            <div class="col-6">
+                <a href="javascript:void(0)" class="menu-icon">
+
+                    <svg width="18px" height="18px" viewBox="0 0 177 130">
+
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="svg" fill-rule="nonzero" fill="#000000">
+                                <path
+                                    d="M0,0 L0,10 L176.724,10 L176.724,0 L0,0 Z M0,69.92 L176.724,69.92 L176.724,59.92 L0,59.92 L0,69.92 Z M0,129.84 L107.724,129.84 L107.724,119.84 L0,119.84 L0,129.84 Z"
+                                    id="Shape"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+                <a href="#" class="brand-name">
+                    <img src="images/logo.png">
+
+
+                </a>
+            </div>
+            <div class="col-6 text-right">
+                <ul class="list-inline info-list">
+                    <li class="list-inline-item username"><a href="#">Welcome Shashank!</a></li>
+                    <li class="list-inline-item"><a href="#">
+                            <svg x="0px" y="0px" width="22px" height="22px" viewBox="0 0 16 16">
+                                <g transform="translate(0, 0)">
+                                    <path data-color="color-2"
+                                        d="M14.5,12.976a1,1,0,0,0-.426-.82A10.367,10.367,0,0,0,8,10.5a10.367,10.367,0,0,0-6.074,1.656,1,1,0,0,0-.426.82V15.5h13Z"
+                                        fill="none" stroke="#ec202a" stroke-linecap="round" stroke-linejoin="round">
+                                    </path>
+                                    <circle cx="8" cy="4" r="3.5" fill="none" stroke="#ec202a" stroke-linecap="round"
+                                        stroke-linejoin="round"></circle>
+                                </g>
+                            </svg>
+                        </a></li>
+                    <li class="list-inline-item notifications"><a href="#">
+                            <svg x="0px" y="0px" width="22px" height="22px" viewBox="0 0 16 16">
+                                <g transform="translate(0, 0)">
+                                    <path data-color="color-2" fill="none" stroke="#ec202a" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10"
+                                        d=" M10,13.5c0,1.105-0.895,2-2,2s-2-0.895-2-2"></path>
+                                    <line fill="none" stroke="#ec202a" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-miterlimit="10" x1="0.5" y1="11.5" x2="15.5" y2="11.5"></line>
+                                    <path fill="none" stroke="#ec202a" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-miterlimit="10"
+                                        d="M14.5,11.5H15 c-1.105,0-2.5-0.895-2.5-2V5c0-2.485-2.015-4.5-4.5-4.5h0C5.515,0.5,3.5,2.515,3.5,5v4.5c0,1.105-0.895,2-2,2">
+                                    </path>
+                                </g>
+                            </svg>
+                        </a></li>
+
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <!-- Header section end -->
+
+
+    <!-- Navigation Section start -->
+    <section class="nav-section">
+
+
+
+        <ul class="list-unstyled">
+            <li><a href="#" class="active">
+                    <figure>
+                        <svg x="0px" y="0px" width="18px" height="18px" viewBox="0 0 16 16">
+                            <g transform="translate(0, 0)">
+                                <rect x="0.5" y="0.5" fill="none" stroke="#ec202a" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-miterlimit="10" width="6" height="6"></rect>
+                                <rect data-color="color-2" x="9.5" y="0.5" fill="none" stroke="#ec202a"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="6"
+                                    height="6"></rect>
+                                <rect data-color="color-2" x="0.5" y="9.5" fill="none" stroke="#ec202a"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="6"
+                                    height="6"></rect>
+                                <rect x="9.5" y="9.5" fill="none" stroke="#ec202a" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-miterlimit="10" width="6" height="6"></rect>
+                            </g>
+                        </svg>
+                    </figure>
+
+
+
+                    <span>Dashboard</span>
+                </a></li>
+            <li><a href="#">
+                    <figure>
+                        <svg x="0px" y="0px" width="18px" height="18px" viewBox="0 0 16 16">
+                            <g transform="translate(0, 0)">
+                                <rect x="1.5" y="2.5" width="3" height="3" rx="1.5" ry="1.5" fill="none"
+                                    stroke="#ec202a" stroke-linecap="round" stroke-linejoin="round" data-cap="butt"
+                                    data-color="color-2"></rect>
+                                <path d="M3.5,14.5h-2v-3H.5v-3a1,1,0,0,1,1-1h1" fill="none" stroke="#ec202a"
+                                    stroke-linecap="round" stroke-linejoin="round" data-cap="butt" data-color="color-2">
+                                </path>
+                                <rect x="11.5" y="2.5" width="3" height="3" rx="1.5" ry="1.5"
+                                    transform="translate(26 8) rotate(-180)" fill="none" stroke="#ec202a"
+                                    stroke-linecap="round" stroke-linejoin="round" data-cap="butt" data-color="color-2">
+                                </rect>
+                                <path d="M12.5,14.5h2v-3h1v-3a1,1,0,0,0-1-1h-1" fill="none" stroke="#ec202a"
+                                    stroke-linecap="round" stroke-linejoin="round" data-cap="butt" data-color="color-2">
+                                </path>
+                                <rect x="6" y="0.5" width="4" height="4" rx="2" ry="2" fill="none" stroke="#ec202a"
+                                    stroke-linecap="round" stroke-linejoin="round" data-cap="butt"></rect>
+                                <path d="M10.5,15.5h-5v-4h-1v-3a2,2,0,0,1,2-2h3a2,2,0,0,1,2,2v3h-1Z" fill="none"
+                                    stroke="#ec202a" stroke-linecap="round" stroke-linejoin="round" data-cap="butt">
+                                </path>
+                            </g>
+                        </svg>
+                    </figure> <span>Customers</span>
+                </a></li>
+            <li><a href="#">
+                    <figure>
+                        <svg x="0px" y="0px" width="18px" height="18px" viewBox="0 0 16 16">
+                            <g transform="translate(0, 0)">
+                                <path data-color="color-2"
+                                    d="M14.5,12.976a1,1,0,0,0-.426-.82A10.367,10.367,0,0,0,8,10.5a10.367,10.367,0,0,0-6.074,1.656,1,1,0,0,0-.426.82V15.5h13Z"
+                                    fill="none" stroke="#ec202a" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <circle cx="8" cy="4" r="3.5" fill="none" stroke="#ec202a" stroke-linecap="round"
+                                    stroke-linejoin="round"></circle>
+                            </g>
+                        </svg>
+                    </figure> <span>Atria users</span>
+                </a></li>
+            <li><a href="#">
+                    <figure>
+                        <svg x="0px" y="0px" width="18px" height="18px" viewBox="0 0 16 16">
+                            <g transform="translate(0, 0)">
+                                <polyline fill="none" stroke="#ec202a" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-miterlimit="10" points=" 4.982,8.068 0.5,6 15,1 10,15.5 7,9 10,6 "
+                                    data-cap="butt"></polyline>
+                            </g>
+                        </svg>
+                    </figure> <span>Locations</span>
+                </a></li>
+            <li><a href="#">
+                    <figure>
+                        <svg x="0px" y="0px" width="18px" height="18px" viewBox="0 0 16 16">
+                            <g transform="translate(0, 0)">
+                                <line fill="none" stroke="#ec202a" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-miterlimit="10" x1="4.5" y1="11.5" x2="11.5" y2="11.5" data-color="color-2">
+                                </line>
+                                <line fill="none" stroke="#ec202a" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-miterlimit="10" x1="4.5" y1="8.5" x2="11.5" y2="8.5" data-color="color-2">
+                                </line>
+                                <line fill="none" stroke="#ec202a" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-miterlimit="10" x1="4.5" y1="5.5" x2="6.5" y2="5.5" data-color="color-2">
+                                </line>
+                                <polygon fill="none" stroke="#ec202a" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-miterlimit="10" points="9.5,0.5 1.5,0.5 1.5,15.5 14.5,15.5 14.5,5.5 ">
+                                </polygon>
+                                <polyline fill="none" stroke="#ec202a" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-miterlimit="10" points="9.5,0.5 9.5,5.5 14.5,5.5 "></polyline>
+                            </g>
+                        </svg>
+                    </figure> <span>Complaints</span>
+                </a></li>
+            <li><a href="#">
+                    <figure>
+                        <svg x="0px" y="0px" width="18px" height="18px" viewBox="0 0 16 16">
+                            <g transform="translate(0, 0)">
+                                <circle data-color="color-2" fill="none" stroke="#ec202a" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-miterlimit="10" cx="8" cy="8" r="2.5"></circle>
+                                <path fill="none" stroke="#ec202a" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    d="M15.5,9V7 l-2.177-0.363c-0.131-0.512-0.332-0.994-0.595-1.437l1.283-1.796L12.596,1.99L10.8,3.272c-0.443-0.263-0.925-0.464-1.437-0.595 L9,0.5H7L6.637,2.677C6.125,2.808,5.643,3.009,5.2,3.272L3.404,1.99L1.99,3.404L3.272,5.2C3.009,5.643,2.808,6.125,2.677,6.637 L0.5,7v2l2.177,0.363c0.131,0.512,0.332,0.994,0.595,1.437L1.99,12.596l1.414,1.414L5.2,12.728c0.443,0.263,0.925,0.464,1.437,0.595 L7,15.5h2l0.363-2.177c0.512-0.131,0.994-0.332,1.437-0.595l1.796,1.283l1.414-1.414L12.728,10.8 c0.263-0.443,0.464-0.925,0.595-1.437L15.5,9z">
+                                </path>
+                            </g>
+                        </svg>
+                    </figure> <span>Settings</span>
+                </a></li>
+            <li><a href="#">
+                    <figure>
+                        <svg x="0px" y="0px" width="18px" height="18px" viewBox="0 0 16 16"
+                            style="transform: rotate(90deg);">
+                            <g transform="translate(0, 0)">
+                                <polygon fill="none" stroke="#ec202a" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    points="12.5,5.5 8,0.5 3.5,5.5 6.5,5.5 6.5,11.5 9.5,11.5 9.5,5.5 "
+                                    data-color="color-2"></polygon>
+                                <path fill="none" stroke="#ec202a" stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.5,10.5v4c0,0.552-0.448,1-1,1h-13 c-0.552,0-1-0.448-1-1v-4"></path>
+                            </g>
+                        </svg>
+                    </figure> <span>Logout</span>
+                </a></li>
+        </ul>
+
+
+
+    </section>
+    <!-- Navigation Section End -->
+
+
+
+
+    <!-- Main Section start -->
+    <section class="main-section">
+
+
+        <!-- Breadcrumb Section Start -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Components</li>
+            </ol>
+        </nav>
+        <!-- Breadcrumb Section End -->
+
+        <h1 class="heading m-b-25">Components</h1>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box-card">
+                    <div class="row">
+                        <div class="col">
+                            <h4>Heading</h4>
+                        </div>
+                    </div>
+
+
+                    <div class="row m-t-30">
+                        <div class="col-md-12 col-lg-10">
+
+
+
+                            <div class="row">
+                                <div class="col-md-12 col-lg-4">
+                                    <div class="form-group">
+                                        <label>Email address</label>
+                                        <input type="text" class="form-control" placeholder="Enter email">
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+
+
+                            <div class="row">
+                                <div class="col-md-12 col-lg-4">
+                                    <div class="form-group">
+                                        <label>First Name</label>
+                                        <input type="text" class="form-control" placeholder="Enter First Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-lg-4">
+                                    <div class="form-group">
+                                        <label>Last Name </label>
+                                        <input type="text" class="form-control" placeholder="Enter Last Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-lg-4">
+                                    <div class="form-group">
+                                        <label>Date of Birth</label>
+                                        <input type="text" class="form-control date" placeholder="DD-MM-YYYY">
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                            <div class="row">
+                                <div class="col-md-12 col-lg-4">
+                                    <div class="form-group">
+                                        <label>City</label>
+                                        <select class="form-control select-style-1">
+                                            <!-- Removed light-green -->
+                                            <option>Bengaluru</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-lg-4">
+                                    <div class="form-group">
+                                        <label>Radio Buttons </label>
+                                        <div class="radio-btn-style-1">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Kit</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">Custom</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-lg-4">
+                                    <div class="form-group">
+                                        <label>Check Box</label>
+                                        <div class="checkbox-style-1">
+
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                    value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox1">Option 1</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                                    value="option2">
+                                                <label class="form-check-label" for="inlineCheckbox2">Option 2</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Remark</label>
+                                        <textarea class="form-control" placeholder="Enter"></textarea>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+
+                            <div class="row">
+
+                                <div class="col-md-12 col-lg-4">
+                                    <div class="form-group">
+                                        <label>Radio Buttons </label>
+                                        <div class="radio-btn-style-1 radio-block">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios"
+                                                    id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                    Option1
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios"
+                                                    id="exampleRadios2" value="option2">
+                                                <label class="form-check-label" for="exampleRadios2">
+                                                    Option2
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios"
+                                                    id="exampleRadios3" value="option3" checked>
+                                                <label class="form-check-label" for="exampleRadios3">
+                                                    Option3
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios"
+                                                    id="exampleRadios4" value="option4">
+                                                <label class="form-check-label" for="exampleRadios4">
+                                                    Option4
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-lg-4">
+                                    <div class="form-group">
+                                        <label>Check Box</label>
+
+                                        <div class="checkbox-style-1 checkbox-block">
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                    Option1
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="defaultCheck2">
+                                                <label class="form-check-label" for="defaultCheck2">
+                                                    Option2
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="defaultCheck3">
+                                                <label class="form-check-label" for="defaultCheck3">
+                                                    Option3
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="defaultCheck4">
+                                                <label class="form-check-label" for="defaultCheck4">
+                                                    Option4
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-md-12 col-lg-4">
+                                    <div class="form-group">
+                                        <label>Auto Complete </label>
+                                        <div class="ui-widget">
+
+                                            <input id="tags" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+
+                            <div class="row">
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="form-group">
+                                        <label>Action button for <br>
+                                            Approve/submit /done</label><br>
+                                        <button type="button" class="btn btn-danger">Submit</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="form-group">
+                                        <label>Action button for <br>
+                                            Remove/clear </label><br>
+                                        <button type="button" class="btn btn-light">Clear</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="form-group">
+                                        <label>Action button for <br>
+                                            Filter/Edit</label><br>
+                                        <button type="button" class="btn btn-primary">Filter</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+    <!-- Main Section End -->
+
+    <!-- Notifications Section start -->
+
+    <section class="notifications-section">
+        <div class="notifications-heading">
+            Notifications
+
+            <a href="javascript:void(0)" class="float-right notifications-close">
+                <img src="images/close-icon.png">
+            </a>
+        </div>
+        <ul class="list-unstyled">
+            <li>
+                <a href="#">
+                    Notifications 1
+                    <small>Bengaluru, Karnataka</small>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Notifications 2
+                    <small>Bengaluru, Karnataka</small>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Notifications 3
+                    <small>Bengaluru, Karnataka</small>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Notifications 4
+                    <small>Bengaluru, Karnataka</small>
+                </a>
+            </li>
+        </ul>
+
+    </section>
+
+    <!-- Notifications Section End -->
+
+
+
+
+    <!-- Script files -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+
+    <script>
+        $(".menu-icon").click(function () {
+            $(".nav-section").toggleClass("expand");
+            $(".main-section").toggleClass("expand");
+        });
+
+        $(".notifications, .notifications-close").click(function () {
+            $(".notifications-section").toggleClass("expand");
+        });
+
+        $(document).ready(function () {
+            var date_input = $('.date'); //our date input has the name "date"
+            var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
+            date_input.datepicker({
+                format: 'dd/mm/yyyy',
+                container: container,
+                todayHighlight: true,
+                autoclose: true,
+            })
+        })
+    </script>
+    <script>
+        $(function () {
+            var availableTags = [
+                "Bengalur",
+                "Hyderabad",
+                "Mumbai",
+                "Chennai",
+                "Delhi"
+            ];
+            $("#tags").autocomplete({
+                source: availableTags
+            });
+        });
+    </script>
+</body>
+
+</html>
